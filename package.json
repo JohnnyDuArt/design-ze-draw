@@ -6,7 +6,8 @@
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {
+    "fsevents": "*",
     "gulp": "^4.0.0",
-    "fsevents": "*"
+    "gulp-watch": "^5.0.1"
   }
 }
