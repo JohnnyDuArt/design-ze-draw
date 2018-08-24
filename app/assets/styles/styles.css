@@ -74,7 +74,7 @@ color: #e13e3e;
 
 body {
 	font-family: 'LyonDisplay';
-	margin:0;
+	margin: 0 20px 0 20px;
 	padding: 0;
 }
 
@@ -119,13 +119,15 @@ body {
 	margin-top: 120px;
 	width: 100%;
 	margin-left: auto;
+	min-height: 240px;
+
 }
 
 .selected-projects {
 float:left;
 padding-right: 40px;
 transform: translateX(0%);
-transition: all 2s ease-out;
+transition: all 1s ease-out;
 
 }
 
@@ -137,8 +139,10 @@ transition: all 2s ease-out;
   margin-right: -60%;
   margin-left: auto;
   transform: translateX(0%);
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
+  display: block;
 }
+
 
 .projects-nav {
 	margin-left: 0px;
@@ -155,6 +159,7 @@ transition: all 2s ease-out;
 	list-style: none;
 	padding-bottom: 40px;
 	margin-left: 0;
+	max-width: 700px;
 }
 
 .projects-nav a {
@@ -196,7 +201,10 @@ div.black-effect {
 	display: none;
 }
 
-div.img-projeto {
+/*PROJECT IMAGES*/
+
+
+div.img-dubois {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -213,32 +221,55 @@ div.img-projeto {
 	*/
 }
 
-
-/*
-
-.roger:hover {
-	color: #e13e3e;
-	background-image: url("../00_Images_Videos/NTW_home.jpg");
+div.img-jemimah {
 	position: fixed;
-	
-	min-width: 100vw;
-	min-height: 100vh;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 0;
+	left: 0;
+	background-image: url("../images/jemimah-barnett.jpg");
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	display: none;
 }
 
-.roger:hover {
-	color: #e13e3e;
-	background-image: url("../00_Images_Videos/NTW_home.jpg");
-	background-position: fixed;
+div.img-polar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url("../images/polar-camp.jpg");
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
 	z-index: -1;
-	min-width: 100vw;
-	min-height: 100vh;
-	margin-left: -33%;
-	margin-top: -50%;
+	display: none;
 }
-*/
+
+
+div.img-invitly {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url("../images/invitly.jpg");
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	display: none;
+}
+
+
+div.img-lexani {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url("../images/lexani-motorcars.jpg");
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	display: none;
+}
 
 
 @media screen and (max-width: 800px) {
@@ -310,9 +341,16 @@ p {
 	padding-bottom: 200px;
 	box-sizing: border-box;
 	transform: translateY(0%);
-	transition: all 2s ease-out;
+	transition: all 1s ease-out;
 }
 
+/*SPECIAL OUT CLASS*/
+
+.out {
+	display: none;
+}
+
+/**/
 
 .main-p {
 	max-width: 1000px;
